@@ -1,0 +1,34 @@
+package com.generic.assignment;
+
+public class Generic_4 {
+	public static void main(String[] args) {
+		
+	Pair<String,String> p=new Pair<>();
+	p.setKey("one");
+	p.setValue("Hello");
+	
+	System.out.println(p.getKey());
+	System.out.println(p.getValue());
+
+	}
+
+}
+class Pair<key,value>{
+	String key;
+	String value;
+	
+	public String getKey() {
+		return key;
+	}
+	public void setKey(String key) {
+		this.key = key;
+	}
+	public String getValue() {
+		return value;
+	}
+	public void setValue(String value) {
+		this.value = value;
+	}
+	
+	
+}

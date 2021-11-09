@@ -1,0 +1,29 @@
+package com.generic.assignment;
+
+public class Generic_3 {
+	public static void main(String[] args) {
+		int arr[]= {25, 1000};
+		Swap sw=new Swap();
+		sw.swap(arr, 0, 1);
+		sw.printElement(arr);
+	}
+}
+
+class Swap{
+	public <E> void swap(int arr[],int a,int b) 
+	{
+		int temp;
+
+		temp= arr[a];
+		arr[a]=arr[b];
+		arr[b]= temp;
+	}
+	
+	public void printElement(int arr[]) {
+		int i=0;
+		while (i<arr.length) {
+			System.out.println(arr[i]);
+			i++;
+		}
+	}
+}

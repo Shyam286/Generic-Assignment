@@ -1,0 +1,32 @@
+package com.generic.assignment;
+
+import java.util.Date;
+
+public class Generics_4b {
+	public static void main(String[] args) {
+		Pair2<String,java.util.Date> p=new Pair2<>();
+		p.setKey("Today is");
+		p.setValue(new java.util.Date());
+		System.out.println(p.getKey());
+		System.out.println(p.getValue());
+	}
+
+}
+class Pair2<key,values>{
+	String key;
+	Date value;
+	public String getKey() {
+		return key;
+	}
+	public void setKey(String key) {
+		this.key = key;
+	}
+	public Date getValue() {
+		return value;
+	}
+	public void setValue(Date value) {
+		this.value = value;
+	}
+	
+	
+}
